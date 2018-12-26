@@ -1,4 +1,5 @@
-/* File Sorting program
+/* Author: Scott Sun
+   File Sorting program
    
    What does it do?
  	
