@@ -1,5 +1,5 @@
 # JavaPracticeProject
-Java Projects I did to Practice Specific API or something I found interesting to Do
+Java Projects I did to practice specific API or something I found interesting or just something I did to practice coding
 
 Index of All Porjects:
 
