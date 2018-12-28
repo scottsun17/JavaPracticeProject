@@ -12,8 +12,8 @@
  		when we use the program, we only call the constructor one time (new the class only once)
  		
  	Follow up question:
- 		It is not a feasible solution. Users of the program does not know that they are limited to 
- 		new the class one time.
+ 		It is not a feasible solution. Users of the program do not know that they are limited to 
+ 		instantiate the class object only once.
  		
  	Solution step 2:
  		Use private property to limit the constructor
@@ -22,10 +22,10 @@
  	Follow up question:
  		When the constructor is private, how can we instantiate class object outside of the 
  		current class?
- 		It also leads to the following problems：
- 		class object cannot be instantiate outside of the class
- 		class method cannot be used without class object
- 		we can only use static method if there is any
+ 		It leads to the following problems：
+ 			class object cannot be instantiate outside of the class
+ 			non static class method cannot be used without class object
+ 			only use static method if there is any
  		
  	Solution step 3:
  		We can try use static property to get or create class object
@@ -33,12 +33,19 @@
  		This method must be accessible to the outside class - [public]
  		This method can be called by Class name - [static]
  			in which, we do not need a class object to call the method
- 		This method must return class Object as the return type - return [Class]
+ 		This method must return class Object as the return type - return type[Class Name]
  		Method Name: [getInstance()]
  		parameter list must be the same as the constructor parameter list
+		
+		public static SingletonDemonstration getInstance(int num) {...}
  	
  	Follow up question:
  		The above method is feasible，however, it does not stop user from creating several class objects
+			SingletonDemonstration s1 = SingletonDemonstration.getInstance(60);
+			SingletonDemonstration s2 = SingletonDemonstration.getInstance(60);
+			.
+			.
+			.
  		
  	Solution step 4:
  		We can validate if there is a class object instantiated already
@@ -75,6 +82,7 @@ class SingletonDemonstration{
 		this.num = num;
 	}
 	
+	//public static method to instantiate the class object - return the first class object instantiated if called mutiple times
 	public static SingletonDemonstration getInstance(int num) {
 		
 		//if class object does not exist, instantiate and store in member variable s
@@ -85,7 +93,8 @@ class SingletonDemonstration{
 		//return type - same as class object SingletonDemo
 		return s;
 	}
-
+	
+	//getter method
 	public int getNum() {
 		return num;
 	}
@@ -109,7 +118,7 @@ public class SingletonConstructor {
 		SingletonDemonstration s2 = SingletonDemonstration.getInstance(60);
 		System.out.println(s2 + "\t" + s2.getNum()); 
 		//Singleton.SingletonDemonstration@96532d6	60
-		//class object s2 is not instantiated 
+		//class object s2 is not instantiated; returned same result as s1
 		
 		SingletonDemonstration s3 = SingletonDemonstration.getInstance(11);
 		System.out.println(s3 + "\t" + s3.getNum());
