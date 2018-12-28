@@ -8,3 +8,4 @@ Let the fun begins :D
 Index of All Porjects:
 
 1. DirectorySorting.java - A Simple Directory Sorting Program to help you sort your directory by file extension
+2. SingletonConstructor.java - Thought process to approach the underlying concept of Singleton and how to acheive it in a basic way 
