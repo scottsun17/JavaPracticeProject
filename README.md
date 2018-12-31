@@ -7,7 +7,7 @@ Let the fun begins :D
 
 Index of All Porjects:
 
-1. Karaoke Lyrics - A program that read lyrics from a LRC file and display song information at beginning and display lyric in according to                    time 
+1. Karaoke Lyrics - Lyric displaying program for Karaoke  
 2. DirectorySorting.java - A Directory Sorting Program to help you sort your directory by file extension
 3. SingletonConstructor.java - Thought process to approach Singleton and demonstrate how to acheive it in a basic way 
 
