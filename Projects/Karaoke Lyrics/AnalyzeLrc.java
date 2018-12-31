@@ -20,14 +20,14 @@ public class AnalyzeLrc {
 	 * @param lrcContents information from the LRC file
 	 * @return ArrayList<String> includes all lyrics information
 	 */
-	public static ArrayList<String> getSongLrcFromLrcContents(String[] lyrics) {
+	public static ArrayList<String> getSongLrcFromLrcContents(String[] lrcContents) {
 		ArrayList<String> allLrcInfo = new ArrayList<String>();
 		
-		if(null == lyrics || lyrics.length == 0) {
+		if(null == lrcContents || lrcContents.length == 0) {
 			throw new NullPointerException();
 		}
 		
-		for(String string : lyrics) {
+		for(String string : lrcContents) {
 			//ignore meaningless line space in the lrcConetents 
 			if(string.length() > 3) {
 				//analyze input information to differentiate song info and lyrics in according to the second char [index 1]
@@ -46,15 +46,15 @@ public class AnalyzeLrc {
 	 * @param lrcContents information from the LRC file
 	 * @return ArrayList<String> includes all song information
 	 */
-	public static ArrayList<String> getSongInfoFromLrcContents(String[] lyrics) {
+	public static ArrayList<String> getSongInfoFromLrcContents(String[] lrcContents) {
 		
 		ArrayList<String> allSongInfo = new ArrayList<String>();
 		
-		if(null == lyrics || lyrics.length == 0) {
+		if(null == lrcContents || lrcContents.length == 0) {
 			throw new NullPointerException();
 		}
 		
-		for(String string : lyrics) {
+		for(String string : lrcContents) {
 			//ignore meaningless line space in the lrcConetents 
 			if(string.length() > 3) {
 				//analyze input information to differentiate song info and lyrics in according to the second char [index 1]
@@ -127,3 +127,6 @@ public class AnalyzeLrc {
 	}	
 }
 	
+	
+	
+
