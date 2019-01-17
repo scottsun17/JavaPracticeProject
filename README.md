@@ -9,8 +9,9 @@ Index of All Porjects:
 
 1. UDP LAN Chat - use UDP Socket to send chat through local area network(LAN)
 2. Karaoke Lyrics - Lyric displaying program for Karaoke  
-3. DirectorySorting.java - A Directory Sorting Program to help you sort your directory by file extension
-4. SingletonConstructor.java - Thought process to approach Singleton and demonstrate how to acheive it
+3. MySQL JDBC - using Java MySQL Connector
+4. DirectorySorting.java - A Directory Sorting Program to help you sort your directory by file extension
+5. SingletonConstructor.java - Thought process to approach Singleton and demonstrate how to acheive it
 
 
 
