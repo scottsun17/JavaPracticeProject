@@ -117,11 +117,11 @@ public class JDBCUtil {
 			if (st != null) {
 				st.close();
 			}
-			if (conn != null) {
-				conn.close();
-			}
 			if (set != null) {
 				set.close();
+			}
+			if (conn != null) {
+				conn.close();
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();
